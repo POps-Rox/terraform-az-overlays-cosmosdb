@@ -75,6 +75,8 @@ override.tf.json
 # Exclude tests files you do wish to add to version control using negated pattern
 #
 tests/**
+!tests/
+!tests/*.tftest.hcl
 tests/**/terraform.tfvars
 test/go.sum
 

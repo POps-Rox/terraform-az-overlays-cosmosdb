@@ -1,5 +1,24 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Migrated the module and examples to `hashicorp/azurerm` 5.x constraints.
+- Updated the private DNS zone virtual network link template to use
+  `private_dns_zone_id`.
+
+### Fixed
+
+- Resource group locks now use the selected resource group ID whether the
+  resource group is created by this module or looked up as an existing group.
+
+### Added
+
+- Added `terraform test` functional coverage for naming precedence, empty-name
+  fallthrough, resource group selection, lock conditionals, tag merging, and
+  location passthrough.
+
 ## [2.0.0] - 2026-05-12
 
 ### ⚠️ Breaking Changes
